@@ -1,0 +1,75 @@
+/*estilizando o body */
+
+body {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* estilizando o checkbox */
+ .checkbox-container {
+ appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    padding: 17px 17px;
+    font-size: 15px;
+    border: 1px solid #7e0856;
+    background-color: #fff;
+    border-radius: 2px;
+    position: relative;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 3px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center; 
+    z-index: 0; 
+}
+
+.checkbox-container:hover .checkmark {
+    border: 8px solid #fa5eb4;
+    background-color: #fa5eb4;
+}
+
+.checkbox-container input:checked + .checkmark {
+    border: 8px solid #e00a80;
+    background-color:#e00a80;
+}
+
+.checkmark:after {
+    content: attr(data-number);
+    z-index: 1;
+}
+
+/* estilizando o botão e a label aposta */
+
+.valor_aposta{
+    border:2px solid;
+    border-color: #fa5eb4;
+}
+
+.lb_valor_aposta{
+    font-size: 20px;
+}
