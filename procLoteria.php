@@ -1,3 +1,4 @@
+
 <?php
 
     $Escolhidos = $_POST['numeros'];
@@ -7,9 +8,15 @@
         echo "Selecione exatamente 25 números para concluir a sua aposta!";
     }else{
         $nSorteados = array();
-            for ($i = 0; $i < 25; $i++) {
-                $nSorteados[] = rand(1, 50);
+        $i = 0;
+        while ($i < 25) {
+            $numero_aleatorio = rand(1, 50);
+            if (!in_array($numero_aleatorio, $nSorteados)) {
+                $nSorteados[] = $numero_aleatorio;
+                $i++;
             }
+        }
+        sort($nSorteados);
 
             $nIguais = array_intersect($Escolhidos, $nSorteados);
             $Acertos = count($nIguais);
