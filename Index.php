@@ -17,8 +17,8 @@
             border: 1px solid #ccc;
             background-color: #fff;
             border-radius: 2px;
-            position: relative; /* Adiciona posição relativa para posicionar o número */
-            user-select: none; /* Evita a seleção do texto */
+            position: relative; 
+            user-select: none;
         }
 
         .checkbox-container input {
@@ -29,21 +29,21 @@
             left: 0;
             margin: 0;
             padding: 0;
-            z-index: 1; /* Garante que a checkbox esteja acima do número */
+            z-index: 1; 
         }
 
         .checkmark {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+            transform: translate(-50%, -50%); 
             background-color: #eee;
             border-radius: 3px;
             width: 20px;
             height: 20px;
-            line-height: 20px; /* Centraliza o número verticalmente */
-            text-align: center; /* Centraliza o número horizontalmente */
-            z-index: 0; /* Garante que o número esteja abaixo da checkbox */
+            line-height: 20px;
+            text-align: center;
+            z-index: 0;
         }
 
         .checkbox-container:hover .checkmark {
@@ -55,8 +55,8 @@
         }
 
         .checkmark:after {
-            content: attr(data-number); /* Exibe o número definido no atributo data-number */
-            z-index: 1; /* Garante que o número esteja acima da checkbox */
+            content: attr(data-number);
+            z-index: 1;
         }
     </style>
 </head>
