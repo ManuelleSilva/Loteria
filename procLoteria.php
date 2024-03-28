@@ -33,8 +33,6 @@
             echo "<strong>Seus números: </strong>" . implode(", ", $Escolhidos) . "<br>";
             echo "<strong>Quantidade de acertos: </strong>" . $Acertos . "<br>";
             echo "<strong>Prêmio: </strong>R$" . number_format($premio, 2, ',', '.');
-
     }
-
 
 ?>
