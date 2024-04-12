@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form method="post" action="loto.php">
+    <form method="post" action="procLoteria.php">
         <div>
         <label for="valor_aposta" class="lb_valor_aposta">Valor da Aposta:</label>
         <input type="number" id="valor_aposta" class="valor_aposta" name="valor_aposta" required><br>
