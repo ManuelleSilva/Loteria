@@ -3,14 +3,16 @@
 body {
     text-align: center;
     margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 
 /* estilizando o checkbox */
- .checkbox-container {
- appearance: none;
--webkit-appearance: none;
--moz-appearance: none;
+.checkbox-container {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     display: inline-block;
     margin: 10px;
     cursor: pointer;
@@ -44,18 +46,20 @@ body {
     width: 20px;
     height: 20px;
     line-height: 20px;
-    text-align: center; 
-    z-index: 0; 
+    text-align: center;
+    z-index: 0;
 }
 
 .checkbox-container:hover .checkmark {
     border: 8px solid #fa5eb4;
     background-color: #fa5eb4;
+    color: #ffffff;
 }
 
-.checkbox-container input:checked + .checkmark {
+.checkbox-container input:checked+.checkmark {
     border: 8px solid #e00a80;
-    background-color:#e00a80;
+    background-color: #e00a80;
+    color: #ffffff;
 }
 
 .checkmark:after {
@@ -64,12 +68,37 @@ body {
 }
 
 /* estilizando o botão e a label aposta */
+.primeira{
+    margin: 20px 0 20px 0 ;
+   }
 
-.valor_aposta{
-    border:2px solid;
+.valor_aposta {
+    border: 2px solid;
     border-color: #fa5eb4;
 }
 
-.lb_valor_aposta{
+/* retirando as setas do campo type="number" para melhor estética */
+.valor_aposta::-webkit-outer-spin-button,
+    .valor_aposta::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
+.lb_valor_aposta {
     font-size: 20px;
+}
+
+/* Botão Apostar */
+.btnAposta{
+    width: 90px;
+    height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    background-color: #e00a80;
+    border: none;
+    border-radius: 20px;
+}
+
+.btnAposta:hover{
+ background-color: #fa5eb4;
+ cursor: pointer;
 }
